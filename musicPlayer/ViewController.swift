@@ -9,6 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var albumLabel: UILabel!
+    @IBOutlet weak var songLabel: UILabel!
+    
+    @IBAction func pickButton(_ sender: Any) {
+    }
+    
+    @IBAction func playButton(_ sender: Any) {
+    }
+    
+    @IBAction func pauseButton(_ sender: Any) {
+    }
+    
+    @IBAction func stopButton(_ sender: Any) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
