@@ -40,6 +40,15 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
         player.stop()
     }
     
+    @IBAction func returnButton(_ sender: Any) {
+        player.skipToPreviousItem()
+    }
+    
+    @IBAction func skipButton(_ sender: Any) {
+        player.skipToNextItem()
+    }
+    
+    
     // メディアアイテムピッカーでアイテムを選択完了したときに呼び出される
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
         // プレイヤーを止める
