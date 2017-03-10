@@ -106,8 +106,7 @@ class ViewController: UIViewController, MPMediaPickerControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        player = MPMusicPlayerController.applicationMusicPlayer()
-        // player = MPMusicPlayerController.systemMusicPlayer()にするとミュージックアプリの再生状況を反映する
+        player = MPMusicPlayerController.systemMusicPlayer()
         
         // 再生中のitemが変わった時に通知を受け取る
         let notificationCenter = NotificationCenter.default
